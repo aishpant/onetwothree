@@ -56,8 +56,8 @@ window.onload = ready;
 
 {{ if (eq .Type "post") }}
 	<p><small><em>Written {{ .Date.Format "January 2, 2006"}}. </em>
-		{{ if $.Site.Params.twitter  }} 
-		Send feedback to <a  href="https://twitter.com/intent/tweet?text=%40{{ $.Site.Params.twitter }}%20%23{{ replace (.URL) "/" "" }}%20">@{{ $.Site.Params.twitter }}</a>.
+		{{ if $.Site.Params.twitter  }}
+		Send feedback to <a  href="https://twitter.com/{{ $.Site.Params.twitter }}">@{{ $.Site.Params.twitter }}</a>.
 		{{ end }}
 	</small></p>
 
